@@ -1,0 +1,161 @@
+:root {
+    --color-primario: #ff8906;    
+    --color-secundario: #f25f4c;   
+    --color-terciario: #60a5fa;   
+    --color-fondo: #0f0e17;        
+    --blanco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--blanco);
+    background-color: var(--color-fondo);
+}
+
+h2 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2.5rem;
+    color: var(--blanco);
+}
+
+header {
+    background-color: var(--color-fondo);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 5%;
+    border-bottom: 2px solid var(--color-primario);
+}
+
+header nav ul {
+    list-style: none; 
+    display: flex;    
+    gap: 20px;        
+}
+
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 1.2rem;       
+    font-weight: 600;        
+    margin: 0 20px;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    transition: all 0.3s ease; 
+    position: relative;
+}
+
+nav a:hover {
+    color: var(--color-primario); 
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--color-primario);
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%; 
+}
+
+.btn-reservar {
+    background-color: var(--color-primario); 
+    color: var(--blanco);
+    padding: 10px 20px;
+    margin-left: auto;
+    font-size: 1.2rem; 
+    border-radius: 5px;         
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-reservar:hover {
+    background-color: var(--color-terciario);   
+    transform: scale(1.1);      
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+.btn-cta {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: #ff8c00; /* Naranja estilo ArroyoRent */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px; /* Bordes suaves */
+    transition: background-color 0.3s ease, transform 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-cta:hover {
+    transform: scale(1.05);    /* El botón se agranda apenas */
+}
+
+.hero-image {
+    width: 100%;           /* La imagen ocupará el ancho total debajo */
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;       /* La imagen se estira al 100% del contenedor */
+    height: auto;      /* Mantiene proporción */
+}
+
+
+
+
+
+
+
+
+
+
+
+.vehiculo-card img {
+    width: 100%;        /* La imagen ocupa el 100% del ancho de la tarjeta */
+    height: 200px;      /* Le das una altura fija para que todas midan lo mismo */
+    object-fit: cover;  /* Esto es clave: hace que la imagen se recorte para llenar el espacio sin deformarse */
+}
+
+.vehiculos-container {
+    display: flex;
+    flex-wrap: wrap;    /* Permite que las tarjetas bajen si no entran */
+    justify-content: center;
+    gap: 20px;          /* Espacio entre tarjetas */
+}
+
+.vehiculo-card {
+    flex: 0 1 300px;    /* Define que cada tarjeta tenga un ancho base de 300px */
+    display: flex;
+    flex-direction: column; 
+}
