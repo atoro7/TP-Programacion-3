@@ -25,6 +25,8 @@ h2 {
     font-size: 2.5rem;
 }
 
+
+/* Header */
 header {
     display: flex;
     justify-content: flex-start;
@@ -88,6 +90,8 @@ nav a:hover::after {
     transform: scale(1.1);      
 }
 
+
+/* Sección Hero */
 .hero {
     display: flex;
     flex-direction: column;
@@ -97,14 +101,19 @@ nav a:hover::after {
 
 .hero-content {
     text-align: center;
-    padding: 60px 20px;
+    padding: 100px 20px;
     width: 100%;
+}
+
+.hero-content h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
 }
 
 .btn-cta {
     display: inline-block;
     padding: 15px 30px;
-    margin-top: 20px;
+    margin-top: 50px;
     background-color: var(--color-primario); 
     color: var(--blanco);
     text-decoration: none;
@@ -129,6 +138,8 @@ nav a:hover::after {
     height: auto;
 }
 
+
+/* Sección Servicios */
 .services {
     padding: 80px 10%;
     text-align: center;
@@ -177,6 +188,8 @@ nav a:hover::after {
     color: #ccc;
 }
 
+
+/* Sección Vehiculos */
 .vehiculos {
     padding: 60px 10%;
 }
@@ -245,4 +258,90 @@ nav a:hover::after {
 .btn-mini-reservar:hover {
     text-decoration: underline;
     opacity: 0.8;
+}
+
+
+/* Sección Nosotros */
+.nosotros {
+    padding: 80px 10%;
+}
+
+.nosotros-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Se adapta solo si hay espacio */
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.nosotros-content h3 {
+    color: var(--color-primario);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.nosotros-content p {
+    color: #ccc;
+    line-height: 1.8;
+}
+
+.nosotros-content strong {
+    color: var(--blanco);
+}
+
+
+/* Footer */
+footer {
+    background-color: #0a0a0a;
+    padding: 60px 10% 20px;
+    border-top: 1px solid #333;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-container div {
+    flex: 1;
+    min-width: 250px;
+}
+
+footer h3, footer h4 {
+    color: var(--color-primario);
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--color-primario);
+}
+
+.footer-contacto p {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+/* Línea final de derechos */
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #222;
+    color: #666;
+    font-size: 0.9rem;
 }
