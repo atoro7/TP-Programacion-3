@@ -21,7 +21,16 @@
             </ul>
         </nav>
 
-        <a href="reserva.html" class="btn-reservar">Reservar Vehículo</a>
+        <a href="./reserva.html" class="btn-reservar animated-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.7781L10.8076 18.3639L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
+            <span class="text">Reservar Vehículo</span>
+            <span class="circle"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.7781L10.8076 18.3639L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
+        </a>
     </header>
 
     <main>
@@ -29,7 +38,7 @@
             <div class="hero-content">
                 <h1>Alquilá el vehículo ideal para tu próxima aventura!</h1>
                 <p>En ArroyoRent te ofrecemos la flota más moderna y variada de la ciudad. Calidad, seguridad y el mejor precio garantizado.</p>
-                <a href="#vehiculos" class="btn-cta">Explorar flota</a>
+                <a href="#vehiculos" class="btn-flota">Explorar flota</a>
             </div>
             <div class="hero-image">
                 <img src="img/banner.png" alt="Camioneta moderna en la carretera">
@@ -68,66 +77,77 @@
         <section id="vehiculos" class="vehiculos">
             <h2>Nuestra Flota</h2>
             <div class="vehiculos-container">
-                
                 <article class="vehiculo-card">
+                    <div class="precio">$25.000</div>
                     <img src="img/auto-compacto.png" alt="Auto compacto económico">
-                    <h3>Renault Kwid</h3>
-                    <p>Ideal para moverte por San Nicolás con agilidad y bajo consumo.</p>
-                    <span class="precio">$25.000 / día</span>
-                    <a href="reserva.html" class="btn-mini-reservar">Reservar ahora</a>
+                    
+                    <div class="content-box">
+                        <h3>Renault Kwid</h3>
+                        <p>Ideal para moverte por San Nicolás con agilidad y bajo consumo.</p>
+                        <a href="reserva.html" class="btn-mini-reservar">Reservar ahora</a>
+                    </div>
                 </article>
 
                 <article class="vehiculo-card">
+                    <div class="precio">$45.000</div>
                     <img src="img/suv-familiar.png" alt="SUV familiar">
-                    <h3>Volkswagen T-Cross</h3>
-                    <p>Espacio y confort para toda la familia en tus viajes largos.</p>
-                    <span class="precio">$45.000 / día</span>
-                    <a href="reserva.html" class="btn-mini-reservar">Reservar ahora</a>
+                    
+                    <div class="content-box">
+                        <h3>Volkswagen T-Cross</h3>
+                        <p>Espacio y confort para toda la familia en tus viajes largos.</p>
+                        <a href="reserva.html" class="btn-mini-reservar">Reservar ahora</a>
+                    </div>
                 </article>
 
                 <article class="vehiculo-card">
+                    <div class="precio">$55.000</div>
                     <img src="img/camioneta.png" alt="Camioneta moderna">
-                    <h3>Toyota Hilux</h3>
-                    <p>Potencia y robustez para cualquier camino o trabajo duro.</p>
-                    <span class="precio">$55.000 / día</span>
-                    <a href="reserva.html" class="btn-mini-reservar">Reservar ahora</a>
+                    
+                    <div class="content-box">
+                        <h3>Toyota Hilux</h3>
+                        <p>Potencia y robustez para cualquier camino o trabajo duro.</p>
+                        <a href="reserva.html" class="btn-mini-reservar">Reservar ahora</a>
+                    </div>
                 </article>
 
                 <article class="vehiculo-card">
+                    <div class="precio">$40.000</div>
                     <img src="img/sedan-ejecutivo.png" alt="Sedán ejecutivo">
-                    <h3>Toyota Corolla</h3>
-                    <p>Elegancia y tecnología para un viaje de negocios o turismo.</p>
-                    <span class="precio">$40.000 / día</span>
-                    <a href="reserva.html" class="btn-mini-reservar">Reservar ahora</a>
+                    
+                    <div class="content-box">
+                        <h3>Toyota Corolla</h3>
+                        <p>Elegancia y tecnología para un viaje de negocios o turismo.</p>
+                        <a href="reserva.html" class="btn-mini-reservar">Reservar ahora</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="nosotros">
+            <h2>Sobre ArroyoRent</h2>            
+            <div class="nosotros-grid">
+                
+                <article class="nosotros-card">
+                    <h3>Nuestra Historia</h3>
+                    <p>Nacimos en el corazón de San Nicolás con el objetivo de simplificar la movilidad en nuestra ciudad y la región...</p>
                 </article>
 
-            </div>
-        </section>
-
-        <section id="nosotros" class="nosotros">
-            <h2>Sobre ArroyoRent</h2>
-            <div class="nosotros-content">
-                <div class="nosotros-item">
-                    <h3>Nuestra Historia</h3>
-                    <p>Nacimos en el corazón de San Nicolás con el objetivo de simplificar la movilidad en nuestra ciudad y la región. Lo que comenzó como un proyecto familiar apasionado por los vehículos, se transformó en la solución de alquiler preferida.</p>
-                </div>
-
-                <div class="nosotros-item">
+                <article class="nosotros-card">
                     <h3>Nuestra Experiencia</h3>
-                    <p>Con más de 5 años en el mercado automotriz, nuestro equipo cuenta con el conocimiento necesario para asegurar que cada unidad que sale de nuestras oficinas esté en condiciones óptimas.</p>
-                </div>
+                    <p>Con más de 5 años en el mercado automotriz, nuestro equipo cuenta con el conocimiento necesario...</p>
+                </article>
 
-                <div class="nosotros-item">
+                <article class="nosotros-card">
                     <h3>Misión y Valores</h3>
-                    <p>Nuestra misión es brindar libertad a través de un servicio de alquiler transparente y accesible. Nos guiamos por valores innegociables: confianza, puntualidad y un compromiso genuino con el cliente.</p>
-                </div>
+                    <p>Nuestra misión es brindar libertad a través de un servicio de alquiler transparente y accesible...</p>
+                </article>
 
-                <div class="nosotros-item">
+                <article class="nosotros-card">
                     <h3>¿Por qué elegirnos?</h3>
-                    <p>Combinamos atención personalizada con una flota moderna para que tu única preocupación sea disfrutar del camino en San Nicolás y la zona.</p>
-                </div>
+                    <p>Combinamos atención personalizada con una flota moderna para que tu única preocupación sea disfrutar del camino...</p>
+                </article>
             </div>
-        </section>
+</section>
     </main>
 
     <footer>
