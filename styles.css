@@ -448,7 +448,7 @@ nav a:hover::after {
 
 /* Footer */
 footer {
-    background-color: #0a0a0a;
+    background-color: var(--black);
     padding: 60px 10% 20px;
     border-top: 1px solid #333;
 }
@@ -488,7 +488,8 @@ footer h3, footer h4 {
     color: var(--color-primario);
 }
 
-.footer-contacto p {
+.footer-contacto p, 
+.footer-info p {
     margin-bottom: 10px;
     color: #ccc;
 }
