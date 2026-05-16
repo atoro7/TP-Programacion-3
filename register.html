@@ -10,57 +10,75 @@
 <body>
 
     <header style="justify-content: center;">
-        <div class="logo">
-            <img src="img/logo.png" alt="ArroyoRent Alquiler de Vehículos">
-        </div>
+    <div class="logo">
+        <a href="./index.html">
+            <img src="img/logo.png" alt="ArroyoRent Alquiler de Vehículos" style="cursor: pointer;">
+        </a>
+    </div>
     </header>
 
     <main class="reserva-main">
-        <div class="wrapper">
+    <div class="wrapper">
+        
+        <div class="step-indicator">
+            <span class="active-step">Paso 1: Personal</span> → <span class="pending-step">Paso 2: Alquiler</span>
+        </div>
+
+        <form action="./reserva.html" method="GET" class="form-card-static">
+            <div class="title">Datos Personales</div>
+            <p class="step-desc">Identificación del conductor para la reserva</p>
             
-            <div class="step-indicator">
-                <span class="active-step">Paso 1: Personal</span> → <span class="pending-step">Paso 2: Alquiler</span>
-            </div>
-
-            <div class="form-card-static">
-                <div class="title">Datos Personales</div>
-                <p class="step-desc">Identificación del conductor para la reserva</p>
-                
-                <div class="flip-card__form">
-                    <div class="form-group">
-                        <label for="nombre">Nombre y Apellido *</label>
-                        <input class="flip-card__input" type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Correo Electrónico *</label>
-                        <input class="flip-card__input" type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="telefono">Número de Teléfono *</label>
-                        <input class="flip-card__input" type="tel" id="telefono" name="telefono" placeholder="Ej: 3364123456" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="documento">DNI / Pasaporte *</label>
-                        <input class="flip-card__input" type="text" id="documento" name="documento" placeholder="Ej: 42345678" required>
+            <div class="flip-card__form">
+                <div class="form-group">
+                    <label for="nombre">Nombre y Apellido *</label>
+                    <div class="input-wrapper-cyber">
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
                     </div>
                 </div>
-                
-                <a href="./reserva.html" class="next-step-btn-link">Siguiente Paso →</a>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico *</label>
+                    <div class="input-wrapper-cyber">
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Número de Teléfono *</label>
+                    <div class="input-wrapper-cyber">
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ej: 3364123456" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="documento">DNI / Pasaporte *</label>
+                    <div class="input-wrapper-cyber">
+                        <input type="text" id="documento" name="documento" placeholder="Ej: 42345678" required>
+                    </div>
+                </div>
             </div>
+            
+            <button type="submit" class="next-step-btn-link">Siguiente Paso →</button>
+        </form>
 
         </div>
     </main>
 
     <footer>
-        <div class="footer-container" style="justify-content: center; text-align: center;">
-            <div>
+        <div class="footer-container">
+            <div class="footer-info">
                 <h3>ArroyoRent</h3>
-                <p>Tu libertad de moverte en San Nicolás y la región.</p>
+                <p>Tu mejor opción de movilidad en San Nicolás.</p>
+            </div>
+            
+            <div class="footer-contacto">
+                <h3>Contacto</h3>
+                <p>📍 Calle Falsa 123, San Nicolás</p>
+                <p>📞 +54 336 456-7890</p>
+                <p>✉️ contacto@arroyorent.com</p>
             </div>
         </div>
+        
         <div class="footer-bottom">
             <p>&copy; 2026 ArroyoRent. Todos los derechos reservados.</p>
         </div>
